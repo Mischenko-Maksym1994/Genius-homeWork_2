@@ -44,12 +44,23 @@
     --primary-color-dark: #011C44;
 }
 
+ /********base********/
+* {
+     box-sizing: border-box;
+ }
+
 body {
     color: var(--primary-color-dark);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    margin: 0px;
 }
+
+h1, h2, h3, h4, h5, p {
+    margin-top: 0px;
+}
+
 address {
     font-style: normal;
 }
@@ -60,6 +71,16 @@ ul {
 a {
     text-decoration: none;
 }
+.container {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0px 16px;
+}
+
+.section {
+    padding: 48px 0px;
+}
 
 .section_title {
     color: var(--primary-color-dark);
@@ -67,6 +88,7 @@ a {
     font-weight: 700;
     font-size: 64px;
     line-height: 1.15;
+    margin-bottom: 48px;
 }
 
 .title_accent {
@@ -76,25 +98,28 @@ a {
 .text-accent {
     text-transform: capitalize;
 }
+
+/****************button*********/
 .button {
     background-color: var(--primary-color-blueAccent);
     color: var(--primary-color-white);
-    width: 219px;
-    height: 53px;
     border-radius: 32px;
     border-color: var(--primary-color-blueAccent);
-    border: none;
+    border: 2px solid transparent;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 18px;
+
+    margin-bottom: 14px;
+    padding: 16px 32px;
 }
 
 .button:hover {
     color: var(--primary-color-dark);
     border: 2px solid #2B7FFF;
-    background-color: var(--primary-color-white);  
+    background-color: transparent;  
 }
-
+/**********links************/
 .links {
     color: var(--primary-color-dark);
 }
@@ -112,14 +137,19 @@ a {
     line-height: 1.17;
 }
 /************ hero ******************/
+.hero {
+    padding: 226px 0px;
+}
 .hero-type {
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 16px;
 }
 .hero_title {
     color: var(--primary-color-blueAccent);
     font-size: 140px;
     line-height: 0.81;
+    margin-bottom: 40px;
 }
 .hero-btn-text {
     font-size: 12px;
@@ -127,7 +157,13 @@ a {
 }
 
 
-/*********About-me*****************/
+/*********About*****************/
+.about {
+    padding-bottom: 88px;
+}
+.about-title {
+    margin-bottom: 40px;
+}
 .about-text {
     font-size: 22px;
     line-height: 1.72;
@@ -136,7 +172,9 @@ a {
     font-weight: 600;
 }
 /************choose************/
-
+.choose {
+    padding-top: 88px;
+}
 .choose-list-item {
     text-align: center;
 }
