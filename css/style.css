@@ -58,7 +58,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, p {
-    margin-top: 0px;
+    margin: 0px;
 }
 
 address {
@@ -66,8 +66,11 @@ address {
 }
 
 ul {
+    margin: 0px;
+    padding: 0px;
     list-style-type: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -75,7 +78,7 @@ a {
     width: 100%;
     max-width: 1216px;
     margin: 0 auto;
-    padding: 0px 16px;
+    padding: 0px 8px;
 }
 
 .section {
@@ -89,6 +92,7 @@ a {
     font-size: 64px;
     line-height: 1.15;
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .title_accent {
@@ -126,19 +130,38 @@ a {
 
 .links:hover {
     color: var(--primary-color-blueAccent);
-    font-weight: 700;
 }
 
  /***********nav************/
-.nav-icon-item {
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    gap: 40px;
+}
+
+.nav-list {
+    display: flex;
+    line-height: 1.17;
+    gap: 56px;
+}
+
+
+.nav-icon-list {
+    display: flex;
+    gap: 32px;
+}
+ .nav-icon-item {
     fill: var(--primary-color-dark);
 }
-.nav-list {
-    line-height: 1.17;
-}
-/************ hero ******************/
+
+/************ hero **********/
 .hero {
     padding: 226px 0px;
+}
+.hero-content {
+    padding-left: 106px;
 }
 .hero-type {
     font-weight: 400;
@@ -150,10 +173,14 @@ a {
     font-size: 140px;
     line-height: 0.81;
     margin-bottom: 40px;
+    text-align: left;
 }
+
 .hero-btn-text {
     font-size: 12px;
     line-height: 1.5;
+    text-align: center;
+    width: 238px;
 }
 
 
@@ -161,12 +188,24 @@ a {
 .about {
     padding-bottom: 88px;
 }
+.about-tumb {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.about-tumb-content {
+    width: 709px;
+}
 .about-title {
     margin-bottom: 40px;
+    text-align: left;
 }
 .about-text {
     font-size: 22px;
     line-height: 1.72;
+}
+.about-text-indent {
+    margin-bottom: 40px;
 }
 .about-text-accent {
     font-weight: 600;
@@ -175,28 +214,76 @@ a {
 .choose {
     padding-top: 88px;
 }
+.choose-list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
 .choose-list-item {
     text-align: center;
+    padding: 24px 32px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.choose-list-item p {
+width: 253px;
 }
 
+.choose-icon {
+    margin-bottom: 8px;
+}
 /**************procedures************/
-
+.procedures-list {
+    display: flex;
+    justify-content: center;
+}
+.procedures-list-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
 
 /*************contacts***************/
+.contacts {
+    padding-bottom: 96px;
+}
 
 /*************footer****************/
 .footer {
     background-color: var(--primary-color-dark);
     font-size: 16px;
     line-height: 1.17;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-list {
     color: var(--primary-color-white);
+    width: 203px;
+}
+.footer-list-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+.address-list {
+    margin-bottom: 16px;
 }
 .address-link {
     color: var(--primary-color-white);
 }
+.footer-nav-icon {
+    text-align: center;
+}
+
 .addres-copyright {
     color: #747272;
     font-size: 13px;
+}
+.footer-political {
+    display: flex;
+    flex-direction: column;
+}
+.political-link {
+    margin-bottom: 16px;
 }
