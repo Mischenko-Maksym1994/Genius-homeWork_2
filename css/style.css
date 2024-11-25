@@ -159,6 +159,10 @@ a {
 /************ hero **********/
 .hero {
     padding: 226px 0px;
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .hero-content {
     padding-left: 106px;
@@ -186,7 +190,7 @@ a {
 
 /*********About*****************/
 .about {
-    padding-bottom: 88px;
+    padding-bottom: 0px;
 }
 .about-tumb {
     display: flex;
@@ -212,7 +216,9 @@ a {
 }
 /************choose************/
 .choose {
-    padding-top: 88px;
+    padding-top: 176px;
+    background-image: linear-gradient(#2B7FFF33, #2B7FFF00, #2B7FFF00);
+    /* background: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%); */
 }
 .choose-list {
     display: flex;
@@ -220,9 +226,10 @@ a {
     gap: 56px;
 }
 .choose-list-item {
+    background-color: var(--primary-color-white);
     text-align: center;
     padding: 24px 32px;
-    border: 1px solid black;
+    border: 1px solid transparent;
     border-radius: 30px;
 }
 .choose-list-item p {
@@ -236,6 +243,7 @@ width: 253px;
 .procedures-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .procedures-list-item {
     flex-basis: calc((100% - 32px) / 3);
@@ -253,6 +261,9 @@ width: 253px;
     line-height: 1.17;
     padding-top: 56px;
     padding-bottom: 56px;
+    background-image: url(../img/backgr-footer.png);
+    background-size: contain;
+    background-position: center;
 }
 .footer-nav {
     display: flex;
